@@ -1,8 +1,7 @@
-#The repo is fully coded and modified by @Dypixx.
-#Please do not sell or remove credits.
+# © Coded by @Dypixx
 
 from pyrogram.client import Client
-from config import *
+from var import *
 
 class Bot(Client):
     def __init__(self):
@@ -27,3 +26,12 @@ class Bot(Client):
 
 
 Bot().run()
+
+"""
+This code is created and owned by @Dypixx. Do not remove or modify the credit.
+
+Removing the credit does not make you a developer; it only shows a lack of respect for real developers.
+  
+Respect the work. Keep the credit.
+
+"""
