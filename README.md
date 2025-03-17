@@ -8,8 +8,6 @@
 - ✅ **Sleek UI** – Best-in-class user experience  
 - ✅ **Advanced Download Mode** – Faster and optimized downloads 
 - ✅ **Details Mode** – Displays reel quality, file size, and other essential details 
-- ✅ **Floodwait Handling** – Smart system to manage Instagram limits  
-- ✅ **Enable/Disable Floodwait Mode** – Control it as per your needs  
 - ✅ **Force Subscribe** – Grow your community effortlessly  
 - ✅ **Easy Deployment** – Get started in no time  
 - ✅ **Integrated Database** – Secure and efficient data handling  
