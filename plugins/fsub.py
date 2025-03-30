@@ -6,6 +6,7 @@ from pyrogram.errors import RPCError
 from Script import txt
 
 async def get_fsub(client, message):
+    dy = await client.get_me()
     bot = client
     user_id = message.from_user.id
     not_joined = []
@@ -33,10 +34,11 @@ async def get_fsub(client, message):
             buttons.append(InlineKeyboardButton(f"🔰 Channel {index} 🔰", url=channel_link))
         except Exception as e:
             print(f"Error fetching channel data: {e}")
+    tybutton = InlineKeyboardButton("🔄 Try Again", url=f"https://t.me/{dy.username}?start=start")
+    buttons.append(tybutton)
     formatted_buttons = [buttons[i:i + 2] for i in range(0, len(buttons), 2)]
     await message.reply(txt.FORCE_SUBSCRIBE_TEXT.format(message.from_user.mention),
-        reply_markup=InlineKeyboardMarkup(formatted_buttons)
-    )
+                        reply_markup=InlineKeyboardMarkup(formatted_buttons))
     return False
 
 """
